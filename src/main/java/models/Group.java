@@ -5,11 +5,9 @@ import java.util.Collections;
 
 public class Group {
 
-    private int id;
     private ArrayList<String> groupMembers;
 
     public Group() {
-        this.id = 1;
         this.groupMembers = new ArrayList<String>();
     }
 
@@ -23,20 +21,8 @@ public class Group {
         }
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public ArrayList<String> getGroupMembers() {
         return groupMembers;
-    }
-
-    public void setGroupMembers(ArrayList<String> groupMembers) {
-        this.groupMembers = groupMembers;
     }
 
     public int getSize() {

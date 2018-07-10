@@ -1,5 +1,70 @@
-th, td {
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+body {
+    background-color: #23658A;
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    width: 720px;
+    margin: 10px auto;
+}
+
+.single_name {
+    text-align: center;
+    font-size: 24px;
+}
+
+.group, .last_group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.member {
+    color: white;
+    font-size: 24px;
+    min-width: 60px;
+    margin: 15px;
+    padding: 0px 15px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #F6AE2D;
+}
+
+.group_id, .and {
+    margin-top: 45px;
+}
+
+.and:last-of-type {
+    display: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.buttons {
+    width: 300px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.button ul li {
+    margin: 15px;
+}
+
+.buttons ul li a {
+    text-decoration: none;
+    color: white;
+    line-height: 200%;
+}
+
+.buttons ul li a:hover {
+    text-decoration: underline;
 }

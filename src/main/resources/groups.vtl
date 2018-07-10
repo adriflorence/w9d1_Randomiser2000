@@ -1,9 +1,35 @@
-<table>
-
-    #foreach ($member in $group)
-    <tr>
-        <td>$member</td>
-    </tr>
+<h1>Randomly generated teams of $group_size:</h1>
+<section class="results">
+    #foreach ($group in $groups)
+    <section class="group">
+        <span class="group_id">group $velocityCount </span>
+        #set($group = $group.getGroupMembers())
+        #foreach ($member in $group)
+            <div class="member">
+                <p><a>$member</a></p>
+            </div>
+        <span class="and"> & </span>
+        #end
+    </section>
     #end
+</section>
 
-</table>
+<section class="last_group">
+    <span class="group_id">group $last_id </span>
+    #foreach ($memberLeft in $everyone)
+    <div class="member">
+        <p><a>$memberLeft</a></p>
+    </div>
+    <span class="and"> & </span>
+    #end
+</section>
+
+<section class="buttons">
+    <ul>
+        <li> <a href="/randomiser/1"> Give me a random name! </a> </li>
+        <li> <a href="/randomiser/2"> Random Duo </a> </li>
+        <li> <a href="/randomiser/3"> Random Trio </a> </li>
+        <li> <a href="/randomiser/4"> Random Quartet </a> </li>
+    </ul>
+</section>
+
